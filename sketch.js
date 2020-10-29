@@ -54,8 +54,8 @@ function draw() {
   textFont("Syne Tactile");
   textSize(20);
   textAlign(LEFT);
-  text(myText,height*1/3,height*1/3);
-  text(myText2,height*1/3+40,height*1/3+40);
+  text(myText,width*1/4,height*1/3);
+  text(myText2,width*1/4+40,height*1/3+40);
 
   //let's dance!
   if(mouseX<=width/2){
@@ -236,9 +236,7 @@ function windowResized() {
 function mouseClicked(){
   if(mySong.isPlaying() == false){
     mySong.play();
-    console.log("play")
   } else {
     mySong.pause();
-    console.log("stop")
   }
 }
